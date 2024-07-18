@@ -1,9 +1,7 @@
 HELLO my name is ADEBAYO
 
 
-
-
-#                                            Overview of Azure Infrastructure
+    #                                        Overview of Azure Infrastructure
 Azure infrastructure is a comprehensive, enterprise-grade cloud platform provided by Microsoft, designed to meet the demands of modern businesses. It encompasses a global network of data centers and a wide array of services, ensuring high availability, robust security, and seamless scalability. Below is an in-depth look at its key components:
 
 Global Data Centers
