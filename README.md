@@ -57,4 +57,18 @@ Azure Synapse Analytics: Integrated analytics service combining big data and dat
 Azure Databricks: Apache Spark-based analytics platform optimized for Azure.
 Azure Stream Analytics: Real-time analytics service for processing stream data.
 
-
+ JavaScript: WTF is JSX (Let's Build a JSX Renderer)
+ JavaScript: A DIY guide to build your own React
+ JavaScript: Building React From Scratch [video]
+ JavaScript: Gooact: React in 160 lines of JavaScript
+ JavaScript: React Internals
+ JavaScript: Learn how React Reconciler package works by building your own lightweight React DOM
+ JavaScript: Build Yourself a Redux
+ JavaScript: Let’s Write Redux!
+ JavaScript: Redux: Implementing Store from Scratch [video]
+ JavaScript: Build Your own Simplified AngularJS in 200 Lines of JavaScript
+ JavaScript: Make Your Own AngularJS
+ JavaScript: How to write your own Virtual DOM
+ JavaScript: Building a frontend framework, from scratch, with components (templating, state, VDOM)
+ JavaScript: Build your own React
+ JavaScript: Building a Custom React Renderer [video]
