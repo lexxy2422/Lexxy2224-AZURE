@@ -1,6 +1,6 @@
 HELLO my name is ADEBAYO
 
-# Global Data Centers Regions Azure operates across numerous regions worldwide, each comprising multiple data centers. This global presence facilitates data redundancy, high availability, and disaster recovery.
+ Global Data Centers Regions Azure operates across numerous regions worldwide, each comprising multiple data centers. This global presence facilitates data redundancy, high availability, and disaster recovery.
 
 Availability Zones Each region contains multiple availability zones, which are isolated data center locations designed to protect applications and data from localized failures.
 
@@ -97,7 +97,7 @@ az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
 # Deploy a new application to the AKS cluster
 kubectl apply -f deployment.yaml
 
-// Create a new Azure Function
+ Create a new Azure Function
 const { AzureFunction, Context, HttpRequest } = require('@azure/functions');
 
 const httpTrigger = async function (context: Context, req: HttpRequest): Promise<void> {
@@ -109,7 +109,7 @@ const httpTrigger = async function (context: Context, req: HttpRequest): Promise
     : "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.";
 
   context.res = {
-    // status: 200, /* Defaults to 200 */
+    status: 200, /* Defaults to 200 */
     body: responseMessage,
   };
 };
@@ -141,7 +141,7 @@ az network vnet create --resource-group myResourceGroup --name myVNet --address-
 # Create a new subnet
 az network vnet subnet create --resource-group myResourceGroup --vnet-name myVNet --name mySubnet --address-prefix 10.0.1.0/24
 
-// Create a new Azure SQL Database client
+ Create a new Azure SQL Database client
 const { Connection, Request } = require('tedious');
 const connection = new Connection({
   server: 'my-sql-server.database.windows.net',
