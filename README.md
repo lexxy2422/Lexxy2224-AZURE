@@ -82,16 +82,16 @@ Building a frontend framework, from scratch, with components (templating, state,
  # Create a new VM
 az vm create --resource-group myResourceGroup --name myVM --image UbuntuLTS --admin-username azureuser --admin-password myPassword
 
-# Start the VM
+ Start the VM
 az vm start --resource-group myResourceGroup --name myVM
 
-# Stop the VM
+ Stop the VM
 az vm stop --resource-group myResourceGroup --name myVM
 
-# Create a new AKS cluster
+ Create a new AKS cluster
 az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 3
 
-# Get the AKS cluster credentials
+ Get the AKS cluster credentials
 az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
 
 # Deploy a new application to the AKS cluster
@@ -100,10 +100,10 @@ kubectl apply -f deployment.yaml
  Create a new Azure Function
 const { AzureFunction, Context, HttpRequest } = require('@azure/functions');
 
-const httpTrigger = async function (context: Context, req: HttpRequest): Promise<void> {
+const httpTrigger = async function ('context: Context, req: HttpRequest): Promise<void> {
   context.log('HTTP trigger function processed a request.');
 
-  const name = (req.query.name || (req.body && req.body.name));
+  const name = ('req.query.name || (req.body && req.body.name));
   const responseMessage = name
     ? "Hello, " + name + ". This HTTP triggered function executed successfully."
     : "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.";
@@ -120,7 +120,7 @@ export default httpTrigger
  Create a new Blob Storage client
 const { BlobServiceClient } = require('@azure/storage-blob');
 const blobServiceClient = new BlobServiceClient(
-  `https://${accountName}.blob.core.windows.net`,
+  'https://${accountName}.blob.core.windows.net',
   new DefaultAzureCredential()
 );
 
@@ -135,7 +135,7 @@ const fileBuffer = Buffer.from('Hello, World!', 'utf8');
 blockBlobClient.uploadData(fileBuffer, fileBuffer.length, uploadOptions);
 
  # Network: 
- # Create a new VNet
+  Create a new VNet
 az network vnet create --resource-group myResourceGroup --name myVNet --address-prefix 10.0.0.0/16
 
 # Create a new subnet
@@ -154,7 +154,7 @@ const connection = new Connection({
   },
 });
 
-# Execute a query
+ Execute a query
 connection.on('connect', (err) => {
   if (err) {
     console.error(err);
@@ -163,14 +163,14 @@ connection.on('connect', (err) => {
       if (err) {
         console.error(err);
       } else {
-        console.log(`Row count: ${rowCount}`);
+        console.log('Row count: ${rowCount}');
       }
     });
     connection.execSql(request);
   }
 });
 
-# Create a new AAD client
+ Create a new AAD client
 const { Client } = require('@azure/identity');
 const client = new Client(
   'https://login.microsoftonline.com/my-tenant-id',
@@ -178,7 +178,7 @@ const client = new Client(
   'my-client-secret'
 );
 
-# Authenticate a user
+ Authenticate a user
 client.acquireTokenSilent('https://graph.microsoft.com/.default')
   .then((tokenResponse) => {
     console.log(`Access token: ${tokenResponse.accessToken}`);
@@ -188,15 +188,15 @@ client.acquireTokenSilent('https://graph.microsoft.com/.default')
   });
 
 
-# Create a new Azure Machine Learning workspace
+ Create a new Azure Machine Learning workspace
 from azureml.core import Workspace
 ws = Workspace.from_config()
 
- # Create a new experiment
+  Create a new experiment
 from azureml.core import Experiment
 exp = Experiment(ws, 'my-experiment')
 
-# Run a new training job
+ Run a new training job
 from azureml.core import ScriptRunConfig
 src = ScriptRunConfig(source_directory='.', script='train.py')
 run = exp.submit(src)
